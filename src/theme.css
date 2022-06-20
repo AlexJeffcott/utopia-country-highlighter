@@ -1,0 +1,56 @@
+:root {
+    /* base properties */
+    --font-sans: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+
+    --size-0: 0.75rem;
+    --size-1: 1rem;
+    --size-2: 1.25rem;
+    --size-3: 1.75rem;
+    --size-4: 2rem;
+    --size-5: 4rem;
+
+    --weight-s: 400;
+    --weight-m: 500;
+    --weight-l: 700;
+
+    --round: 1e5px;
+    --radius: 5px;
+
+    --border-size: 1px;
+
+    --gray-lightest: hsl(0, 0%, 100%);
+    --gray-light: hsl(210, 16%, 93%);
+    --gray-mid: hsl(210, 9%, 31%);
+    --gray-dark: hsl(210, 11%, 15%);
+    --gray-darkest: hsl(0, 0%, 0%);
+
+    --brand-color: hsl(329, 85%, 48%);
+    --brand-color-darker: hsl(329, 85%, 28%);
+
+    --success: hsl(130, 57%, 56%);
+
+    /* composed properties */
+    --text-color-dark: var(--gray-darkest);
+    --text-color-light: var(--gray-lightest);
+
+    --surface-background: var(--gray-light);
+    --surface-raised: var(--gray-lightest);
+    --surface-dark: var(--gray-darkest);
+
+    --padding-s: var(--size-0);
+    --padding-m: var(--size-3);
+    --padding-l: var(--size-5);
+
+    --button-font-size: var(--size-3);
+    --button-font-weight: var(--weight-m);
+    --button-padding: var(--padding-s) var(--padding-m) var(--padding-s) var(--padding-m);
+
+    --page-heading-size: var(--size-5);
+    --page-heading-family: var(--font-sans);
+    --page-heading-weight: var(--weight-s);
+    --page-heading-padding: var(--padding-l) var(--padding-m) var(--padding-l) var(--padding-m);
+
+    --sub-heading-size: var(--size-4);
+    --sub-heading-family: var(--font-sans);
+    --sub-heading-weight: var(--weight-m);
+}
