@@ -30,10 +30,10 @@ export default function App() {
         </span>
       </header>
       <main>
-        <h2>Select a continent and click on the countries you want to highlight.</h2>
+        <h2>Select region and click on the countries you want to highlight.</h2>
         <div className="continent-picker">
           {Object.keys(continentCountryMap).sort().map((continent) => (
-            <button id={continent} className={`continent-button${selectedcontinent === continent ? ' selected' : ''}`} onClick={handlecontinentClick} key={continent}>{continent}</button>
+            <button id={continent} className={selectedcontinent === continent ? ' selected' : ''} onClick={handlecontinentClick} key={continent}>{continent}</button>
           ))}
         </div>
         <div className="country-picker">

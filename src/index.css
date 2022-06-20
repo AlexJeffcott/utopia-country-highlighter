@@ -36,7 +36,7 @@ header > h1 {
 header > .logo {
   position: absolute;
   right: var(--padding-m);
-  top: calc(var(--padding-l) - .45rem);
+  top: calc(var(--padding-l) - var(--size-1));
   width: 6rem;
   height: 6rem;
   display: none;
@@ -53,8 +53,8 @@ header > .logo {
 header > .logo:after {
   content: '';
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 7px;
+  top: 7px;
   width: 15px;
   height: 15px;
   background-color: var(--success);

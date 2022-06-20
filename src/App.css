@@ -6,26 +6,30 @@
     margin: auto;
     width: 90%;
     max-width: 650px;
-    min-width: 400px;
+    min-width: 380px;
   }
   
 /* sub title */
   main > h2 {
     text-align: center;
-    font-size: var(--sub-heading-size);
+    font-size: var(--size-4);
     font-family: var(--sub-heading-family);
     font-weight: var(--sub-heading-weight);
     color: var(--text-color-dark);
     margin: 0;
-    margin-top: var(--size-5);
+    margin-top: var(--size-2);
   }
   
   /* continent picker */
   .continent-picker {
     display: flex;
+    flex-direction: column;
+    padding-left: var(--size-5);
+    padding-right: var(--size-5);
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--size-4);
+    row-gap: var(--size-2);
+    column-gap: var(--size-5);
   }
   
   button {
@@ -66,39 +70,18 @@
     border-color: var(--brand-color-darker);
   }
   
-  button.continent-button.selected {
-    color: var(--brand-color);
-    border-color: var(--brand-color);
-  }
-  
-  button.continent-button.selected:is(:hover) {
-    color: var(--brand-color-darker);
-    border-color: var(--brand-color-darker);
-  }
-  
   /* country picker */
   .country-picker {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: var(--size-1);
     margin: auto;
-  }
-  
-  @media (min-width: 500px) {
-    .country-picker { grid-template-columns: repeat(2, 1fr); }
-  }
-  
-  @media (min-width: 700px) {
-    .country-picker { grid-template-columns: repeat(3, 1fr); }
-  }
-  
-  @media (min-width: 900px) {
-    .country-picker { grid-template-columns: repeat(4, 1fr); }
+    padding-left: var(--size-6);
   }
   
   label {
     color: var(--text-color-dark);
     font-size: var(--size-2);
-    font-weight: var(--weight-m);
+    font-weight: var(--weight-s);
     font-family: var(--font-sans);
     margin: 0;
     padding: 0;
@@ -135,3 +118,22 @@
     width: 1px;
   }
   
+  @media (min-width: 400px) {
+    main > h2 {
+      font-size: var(--sub-heading-size);
+      margin-top: var(--size-5)
+    }
+  }
+
+  @media (min-width: 500px) {
+    .country-picker { grid-template-columns: repeat(2, 1fr); }
+    .continent-picker { flex-direction: row; }
+  }
+  
+  @media (min-width: 700px) {
+    .country-picker { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  @media (min-width: 900px) {
+    .country-picker { grid-template-columns: repeat(4, 1fr); }
+  }
